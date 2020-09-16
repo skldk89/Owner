@@ -3,10 +3,10 @@ package RestaurantReservation;
 public class ReservationDeclined extends AbstractEvent {
 
     private Long id;
-    private Long ownerID;
+    private Long ownerId;
     private String status;
     private String reservationDate;
-    private Long reservationID;
+    private Long reservationId;
 
     public ReservationDeclined(){
         super();
@@ -20,11 +20,11 @@ public class ReservationDeclined extends AbstractEvent {
         this.id = id;
     }
     public Long getOwnerId() {
-        return ownerID;
+        return ownerId;
     }
 
-    public void setOwnerId(Long ownerID) {
-        this.ownerID = ownerID;
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
     }
     public String getStatus() {
         return status;
@@ -41,10 +41,10 @@ public class ReservationDeclined extends AbstractEvent {
         this.reservationDate = reservationDate;
     }
     public Long getReservationId() {
-        return reservationID;
+        return reservationId;
     }
 
-    public void setReservationId(Long reservationID) {
-        this.reservationID = reservationID;
+    public void setReservationId(Long reservationId) {
+        this.reservationId = reservationId;
     }
 }
